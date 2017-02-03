@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+<style>
+body {
+background: #2F4F4F;
+max-width: 700px;
+text-shadow: 1px 1px 1px #F0FFFF;
+}
+div {
+  height: 300px;
+  
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 14px;
+  align-self: center;
+
+}
+p {
+  color: #F0F8FF;
+  background-size: black;
+  background: linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.4));
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0.4));
+  padding: 10px;
+  font-size: 22px;
+  position: absolute;
+  line-height: 18px;
+  height: 35px;
+  text-align: justify;
+  bottom: 0;
+  margin: 0;
+
+}
+.des p{
+  height: 150px;
+}
+.des small{
+  opacity: 1;
+}
+.one {
+background: url("http://i.imgur.com/31kEiN8.jpg?1");
+background-position: center;
+background-size: cover;
+}
+.two {
+  background: url("http://i.imgur.com/L62h6s2.jpg");
+  background-position: center;
+background-size: cover;
+}
+.three {
+  background: url("http://dash.ga.co/assets/dessertcourse.jpg");
+  background-position: center;
+background-size: cover;
+}
+.money {
+  float: right;
+  font-size: 18px;
+}
+h1 {
+  
+  font-size: 85px;
+  text-align: center;
+  margin: 60px 0 0 0;
+  color: #8FBC8F;
+  }
+
+  small {
+    font-size: 15px;
+    opacity: 0;
+  }
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0 120px 0;
+    color: #bbbbbb;
+  }
+  @media (max-width: 500px){
+    h1{
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 40px;
+
+    }
+    h2 {
+      font-size: 20px;
+      margin: 20px 0 30px 0;
+    }
+    div {
+      margin: 20px 12px 0 12px;
+    }
+    p{
+      font-size: 20px;
+      line-height: 26px;
+
+    }
+    small{
+      font-size: 14px;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+<h1 style="font-family: 'Londrina Shadow',cursive">LoVe  BaKeRs</h1>
+<h2>A New Delhi City Bakery</h2>
+
+<div class="one des" style="font-family: helvetica, sans-serif">
+<p>Honey Mollted Vanila Bread<span class="money">$26</span></br><small>Pistashio sierra leone creamy bologi kale chard beet delisious black-eyed pea sorrel amaranth garlic tigernut spring icey summer purslane asparagus lentil.</small> </p>
+</div>
+<div class="two des" style="font-family: helvetica, sans-serif">
+<p>Fruitcake Marzipan Pudding Dragee<span class="money">$22</span></br><small> Tri-tip capicola kielbasa salami brisket honey strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin .</small></p>
+</div>
+<div class="three des" style="font-family: helvetica, sans-serif">
+<p>Lava Dark Browny Stuff<span class="money">$8</span> </br><small>Lollipop tart cotton candy prosciutto bresaola jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  
+  $('div').on('click', function() {
+  $(this).toggleclass('des');
+  });
+</script>
+</body>
